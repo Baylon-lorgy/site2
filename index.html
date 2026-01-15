@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium Caps Collection</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --primary:#2c3e50;
+  --primary-dark:#1a252f;
+  --bg-light:#f5f5f5;
+  --text-dark:#333;
+  --text-muted:#666;
+  --white:#fff;
+}
+
+/* RESET */
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:Montserrat,sans-serif;color:var(--text-dark);line-height:1.6}
+
+/* GLOBAL */
+.container{max-width:1200px;margin:auto;padding:0 20px}
+section{padding:80px 0}
+h2{font-family:'Playfair Display',serif;text-align:center;margin-bottom:3rem}
+
+/* HEADER */
+header{position:absolute;width:100%;background:rgba(0,0,0,.3)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 0}
+.logo{color:#fff;font-size:1.8rem;text-decoration:none;font-family:'Playfair Display'}
+.nav a{color:#fff;margin-left:20px;text-decoration:none}
+.nav a:hover{color:var(--primary)}
+
+/* HERO */
+#hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url("images/bg2.jpg") center/cover;
+color:#fff;
+text-align:center
+}
+#hero h1{font-size:3.5rem;font-family:'Playfair Display'}
+#hero p{margin:1rem 0 2rem}
+
+/* BUTTON */
+.btn{
+background:var(--primary);
+color:#fff;
+padding:12px 30px;
+border-radius:5px;
+text-decoration:none;
+display:inline-block
+}
+.btn:hover{background:var(--primary-dark)}
+
+/* GRID */
+.grid{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+
+/* CARD */
+.card{
+background:var(--white);
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.1)
+}
+.card img{width:100%;height:220px;object-fit:cover}
+.card div{padding:1.5rem}
+.card h3{color:var(--primary);margin-bottom:.5rem}
+
+/* FOOTER */
+footer{
+background:#333;
+color:#fff;
+text-align:center;
+padding:2rem
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav class="container">
+    <a class="logo" href="#">🧢 Premium Caps</a>
+    <div class="nav">
+      <a href="#caps">Our Caps</a>
+      <a href="#customers">Customers</a>
+      <a href="#users">Users</a>
+    </div>
+  </nav>
+</header>
+
+<section id="hero">
+  <div>
+    <h1>Discover Premium Caps</h1>
+    <p>Quality headwear for every style and occasion</p>
+    <a href="#caps" class="btn">Shop Now</a>
+  </div>
+</section>
+
+<section id="caps" style="background:var(--bg-light)">
+  <div class="container">
+    <h2>Our Cap Collection</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="images/cap1.jpg">
+        <div>
+          <h3>Classic Baseball Cap</h3>
+          <p>Timeless style with premium fabric</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/cap2.jpg">
+        <div>
+          <h3>Snapback Cap</h3>
+          <p>Adjustable fit for maximum comfort</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/cap3.jpg">
+        <div>
+          <h3>Trucker Cap</h3>
+          <p>Breathable mesh design for active wear</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="customers">
+  <div class="container">
+    <h2>What Our Customers Say</h2>
+    <div class="grid">
+      <div class="card">
+        <div>
+          <h3>Sarah M.</h3>
+          <p>"Excellent quality and fast shipping. The caps are exactly what I was looking for!"</p>
+        </div>
+      </div>
+      <div class="card">
+        <div>
+          <h3>John D.</h3>
+          <p>"Best caps I've bought. Great fit and durable. Highly recommended!"</p>
+        </div>
+      </div>
+      <div class="card">
+        <div>
+          <h3>Emma L.</h3>
+          <p>"Perfect for everyday wear. Comfortable and stylish. Will buy again!"</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="users" style="background:var(--bg-light)">
+  <div class="container">
+    <h2>User Reviews</h2>
+    <div class="grid">
+      <div class="card">
+        <div>
+          <h3>Alex T.</h3>
+          <p>⭐⭐⭐⭐⭐ "Perfect quality and amazing customer service!"</p>
+        </div>
+      </div>
+      <div class="card">
+        <div>
+          <h3>Maria G.</h3>
+          <p>⭐⭐⭐⭐⭐ "Love my caps! Great variety and competitive prices."</p>
+        </div>
+      </div>
+      <div class="card">
+        <div>
+          <h3>Chris R.</h3>
+          <p>⭐⭐⭐⭐⭐ "Fast delivery and excellent packaging. Recommend to everyone!"</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 Premium Caps Collection - All Rights Reserved
+</footer>
+
+</body>
+</html>
